@@ -1,0 +1,44 @@
+Class documentation
+<---- javadoc command: ---->
+/Applications/Bluej 3.1.1/BlueJ.app/Contents/Frameworks/jdk.framework/Versions/A/Contents/Home/bin/javadoc
+-author
+-version
+-nodeprecated
+-package
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.7
+-classpath
+/Applications/Bluej 3.1.1/BlueJ.app/Contents/Resources/Java/bluejcore.jar:/Applications/Bluej 3.1.1/BlueJ.app/Contents/Resources/Java/junit-4.8.2.jar:/Users/Roger/Desktop/hades-applet.jar:/Users/Roger/Sites/Projects/die6
+-d
+/Users/Roger/Sites/Projects/die6/doc
+-encoding
+UTF-8
+-charset
+UTF-8
+-docletpath
+/Applications/Bluej 3.1.1/BlueJ.app/Contents/Resources/Java/bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+/Users/Roger/Sites/Projects/die6/Die6.java
+<---- end of javadoc command ---->
+Loading source file /Users/Roger/Sites/Projects/die6/Die6.java...
+Constructing Javadoc information...
+Standard Doclet version 1.7.0_45
+Building tree for all the packages and classes...
+Generating /Users/Roger/Sites/Projects/die6/doc/Die6.html...
+/Users/Roger/Sites/Projects/die6/Die6.java:8: warning - @Mr. is an unknown tag.
+/Users/Roger/Sites/Projects/die6/Die6.java:8: warning - @1.0 is an unknown tag.
+Generating /Users/Roger/Sites/Projects/die6/doc/package-frame.html...
+Generating /Users/Roger/Sites/Projects/die6/doc/package-summary.html...
+Generating /Users/Roger/Sites/Projects/die6/doc/constant-values.html...
+Building index for all the packages and classes...
+Building index for all classes...
+Generating /Users/Roger/Sites/Projects/die6/doc/allclasses-frame.html...
+Generating /Users/Roger/Sites/Projects/die6/doc/allclasses-noframe.html...
+Generating /Users/Roger/Sites/Projects/die6/doc/index.html...
+Generating /Users/Roger/Sites/Projects/die6/doc/stylesheet.css...
+2 warnings

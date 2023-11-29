@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=DieN
+comment0.text=\n\ Abstracts\ one\ six-sided\ die\ (plural\ is\ dice)\n\ \n\ @Mr.\ Jaffe\n\ @1.0\ 2017-07-13\n
+comment1.params=sides
+comment1.target=DieN(int)
+comment1.text=\n\ Constructor\ to\ do\ an\ initial\ roll\ to\ set\ the\ first\ value\n
+comment2.params=sides
+comment2.target=void\ setSides(int)
+comment2.text=\n\ Getter\ for\ value\n\ @return\ Die\ value\n
+comment3.params=
+comment3.target=int\ getValue()
+comment4.params=
+comment4.target=void\ roll()
+comment4.text=\n\ Roll\ the\ die\!\ Generate\ random\ number\ 1\ <\=\ x\ <\=\ 6\ and\ assign\ to\ value\n\ Note\ that\ roll\ does\ NOT\ return\ the\ new\ value\n
+comment5.params=
+comment5.target=int\ rollAndGetValue()
+comment5.text=\n\ Roll\ the\ die\ and\ return\ the\ new\ value\n\ @return\ Die\ value\n
+numComments=6
