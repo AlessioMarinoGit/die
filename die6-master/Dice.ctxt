@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Dice
+comment0.text=\n\ Uses\ the\ Die6\ class\ to\ roll\ 2\ dice\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=Dice()
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Dice\n
+comment2.params=
+comment2.target=void\ roll()
+comment3.params=
+comment3.target=int\ getTotal()
+comment4.params=
+comment4.target=int\ rollAndGetTotal()
+numComments=5

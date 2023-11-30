@@ -17,6 +17,7 @@ public class DieN
      * Constructor to do an initial roll to set the first value
      */
     public DieN(int sides) {
+        sidesToRoll = sides;
         this.roll();
     }
 
