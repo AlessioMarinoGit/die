@@ -7,7 +7,8 @@
 
 public class Dice
 {
-    private Die6 die6 = new Die6();
+    private Die6 die1;
+    private Die6 die2;
     private int[] values;
 
     /**
@@ -15,12 +16,14 @@ public class Dice
      */
     public Dice()
     {
+        die1 = new Die6();
+        die2 = new Die6();
         this.roll();
     }
     
     public void roll() {
-        int roll1 = die6.rollAndGetValue();
-        int roll2 = die6.rollAndGetValue();
+        int roll1 = die1.rollAndGetValue();
+        int roll2 = die2.rollAndGetValue();
         
         int[] rolls = {roll1, roll2};
         this.values = rolls;
