@@ -9,7 +9,6 @@ public class Dice
 {
     private Die6 die1;
     private Die6 die2;
-    private int[] values;
 
     /**
      * Constructor for objects of class Dice
@@ -18,27 +17,19 @@ public class Dice
     {
         die1 = new Die6();
         die2 = new Die6();
-        this.roll();
     }
     
     public void roll() {
-        int roll1 = die1.rollAndGetValue();
-        int roll2 = die2.rollAndGetValue();
-        
-        int[] rolls = {roll1, roll2};
-        this.values = rolls;
+        die1.roll();
+        die2.roll();
     }
 
-    public int getTotal() {
-        int total = 0;
-        for (int i = 0; i < values.length; i++) {
-            total += values[i];
-        }
-        return total;
+    public int getValue() {
+        return die1.getValue() + die2.getValue();
     }
     
-    public int rollAndGetTotal() {
+    public int rollAndGetValue() {
         roll();
-        return getTotal();
+        return getValue();
     }
 }

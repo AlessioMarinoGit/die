@@ -1,45 +1,53 @@
-/**
- * Uses the Die6 class to roll 2 dice
- *
- * @author (your name)
- * @version (a version number or a date)
- */
-
 public class Yahtzee
 {
-    private Die6[] dice;
-    private int[] values;
+    private Die6[] dice = {
+            new Die6(),
+            new Die6(),
+            new Die6(),
+            new Die6(),
+            new Die6()
+        };
 
     /**
      * Constructor for objects of class Yahtzee
      */
     public Yahtzee()
     {
-        dice[1] = new Die6();
-        dice[2] = new Die6();
-        dice[3] = new Die6();
-        dice[4] = new Die6();
-        dice[5] = new Die6();
-        int[] diceToRoll = { 1,2,3,4,5 };
-        this.roll( diceToRoll );
+        this.roll();
     }
-    
-    public void roll(int[] diceToRoll) {
-        for (int i = 0; i < diceToRoll.length; i++) {
-            this.values[diceToRoll[i]] = dice[diceToRoll[i]].rollAndGetValue();
+
+    public void roll(int dieNumber) {
+        if (dieNumber > 0 && dieNumber <= dice.length) {
+            dice[dieNumber-1].roll();
         }
     }
 
-    public int getTotal() {
-        int total = 0;
-        for (int i = 0; i < values.length; i++) {
-            total += values[i];
+    public void roll() {
+        for (int i = 0; i < dice.length; i++) {
+            dice[i].roll();
         }
-        return total;
     }
-    
-    public int rollAndGetTotal(int[] diceToRoll) {
-        roll(diceToRoll);
-        return getTotal();
+
+    public String summarize() {
+        String values = "";
+
+        for (int i = 0; i < dice.length; i++) {
+            values += (i+1)+"-"+dice[i].getValue();
+            if (i < dice.length-1) {
+                values += "; ";
+            }
+        }
+
+        return values;
+    }
+
+    public String toString() {
+        String values = "Dice values: ";
+
+        for (int i = 0; i < dice.length; i++) {
+            values += dice[i].getValue();
+        }
+
+        return values;
     }
 }
