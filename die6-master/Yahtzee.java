@@ -7,10 +7,7 @@ public class Yahtzee
             new Die6(),
             new Die6()
         };
-
-    /**
-     * Constructor for objects of class Yahtzee
-     */
+        
     public Yahtzee()
     {
         this.roll();
@@ -30,10 +27,14 @@ public class Yahtzee
 
     public String summarize() {
         String values = "";
-
+        int[] amount = {0, 0, 0, 0, 0, 0};
+        
         for (int i = 0; i < dice.length; i++) {
-            values += (i+1)+"-"+dice[i].getValue();
-            if (i < dice.length-1) {
+            amount[dice[i].getValue()-1]++;
+        }
+        for (int i = 1; i <= amount.length; i++) {
+            values += i+"-"+amount[i-1];
+            if (i <= amount.length) {
                 values += "; ";
             }
         }
@@ -42,10 +43,10 @@ public class Yahtzee
     }
 
     public String toString() {
-        String values = "Dice values: ";
+        String values = "Dice values:";
 
         for (int i = 0; i < dice.length; i++) {
-            values += dice[i].getValue();
+            values += " " + dice[i].getValue();
         }
 
         return values;
